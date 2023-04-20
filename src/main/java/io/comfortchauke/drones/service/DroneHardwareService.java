@@ -25,7 +25,7 @@ public class DroneHardwareService {
             return;
         }
         int level=random.nextInt(currentCapacity+25);
-        if(level>currentCapacity){
+        if(currentCapacity<50 && level>currentCapacity){
             drone.setBatteryCapacity(80+ random.nextInt(19));
             return;
         }
