@@ -29,7 +29,7 @@ public class Drone extends AbstractEntity {
     @Enumerated(EnumType.STRING)
     private DroneModel model;
     public DroneDto getDroneDto(){
-        return new DroneDto(model,weightLimit,0,serialNumber,state);
+        return new DroneDto(model,weightLimit,0,serialNumber,state,batteryCapacity);
     }
     public DroneLog getDroneLog(){
         return new DroneLog(0,serialNumber,batteryCapacity, Instant.now());

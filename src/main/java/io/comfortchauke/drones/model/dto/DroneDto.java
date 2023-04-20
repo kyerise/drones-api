@@ -15,4 +15,5 @@ public class DroneDto {
     private int weight;
     private String serialNumber;
     private DroneState state;
+    private Integer batteryCapacity;
 }
